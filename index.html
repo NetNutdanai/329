@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        header {
+            background-color: #196F3D;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        footer {
+            background-color: #196F3D;
+            margin-top: 20px;
+            padding: 55px;
+        }
+
+        body {
+            background-color: blanchedalmond;
+        }
+
+        img {
+            float: right;
+            margin-right: 900px;
+            margin-top: 100px;
+        }
+    </style>
 </head>
 <body>
+    <header>
     <h1>Workshop #HTML - FORM</h1>
+    </header>
+    <img src="sad-frog-feels-bad-man-meme.png" alt="ข้อความอธิบายภาพ" width="200px" height="200px" />
+
     <form>
-    <table>
+    <br>
+        <table>
         <tr>
             <td>ชื่อ</td>
             <td><input type="text"></td>
@@ -44,11 +75,11 @@
         <tr>
             <td>สีที่ชอบ</td>
             <td><select id="color" name="color">
-                    <option value="red">แดง</option>
+                    <option value="not_selected">-</option>
                     <option value="blue">ฟ้า</option>
                     <option value="green">เขียว</option>
                     <option value="yellow">เหลือง</option>
-                    <option value="black">ดำ</option>
+                    <option value="other">อื่นๆ</option>
                 </select></td>
         </tr>
         <tr>
@@ -68,5 +99,8 @@
     <input type="reset" value="Reset">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
     <input type="submit" value="Submit">
 </form>
+<footer>
+    <b></b>
+</footer>
 </body>
 </html>
