@@ -1,5 +1,4 @@
 header {
-    background-color: #196F3D;
     padding: 30px;
     text-align: center;
     color: white;
@@ -8,18 +7,20 @@ header {
 }
 
 footer {
-    background-color: #196F3D;
+    background-color: #F0B1A4;
+    padding: auto;
     margin-top: 20px;
     padding: 55px;
 }
 
 body {
-    background-color: blanchedalmond;
+    background-color: #971515 ;
+    color: white;
 }
 
 img {
     float: right;
-    margin-right: 900px;
+    margin-right: 10%;
     margin-top: 100px;
 }
 input{
@@ -36,6 +37,6 @@ input{
     width: 75px;
     font-size: 15px;
 }
-table{
-    
+table,div{
+    margin-left: 40%;
 }
