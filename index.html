@@ -1,83 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
     <h1>Workshop #HTML - FORM</h1>
-    </header>
-    <img src="sad-frog-feels-bad-man-meme.png" alt="ข้อความอธิบายภาพ" width="200px" height="200px" />
-
+</header>
+    <img class="snowman" src="image_2023-12-03_010003133-removebg-preview.png" />
+    <img class="tree" src="image_2023-12-03_010819793-removebg-preview.png" />
     <form>
-    <br>
+        <br>
         <table>
-        <tr>
-            <td>ชื่อ</td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td>สกุล</td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td>วัน/เดือน/ปีเกิด</td>
-            <td><input type="date"></td>
-        </tr>
-        <tr>
-            <td>อายุ</td>
-            <td><input type="number"></td>
-        </tr>
-        <tr>
-            <td>เพศ</td>
-            <td><input id="radio_male" type="radio" name="sex_radio" />
-                <label for="radio_male">ชาย</label>
-                <input id="radio_female" type="radio" name="sex_radio" />
-                <label for="radio_female">หญิง</label>
-            </td>
-        </tr>
-        <tr>
-            <td>รูป</td>
-            <td><input type="file"></td>
-        </tr>
-        <tr>
-            <td>ที่อยู่</td>
-            <td><textarea placeholder="กรุณากรอกข้อมูล" rows="4" cols="20"></textarea></td>
-        </tr>
-        <tr>
-            <td>สีที่ชอบ</td>
-            <td><select id="color" name="color">
-                    <option value="not_selected">-</option>
-                    <option value="blue">ฟ้า</option>
-                    <option value="green">เขียว</option>
-                    <option value="yellow">เหลือง</option>
-                    <option value="other">อื่นๆ</option>
-                </select></td>
-        </tr>
-        <tr>
-            <td>แนวเพลงที่ชอบ</td>
-            <td><input id="forlife_song" type="radio" name="song_radio" />
-                <label for="forlife_song">เพื่อชีวิต</label>
-                <input id="looktung_song" type="radio" name="song_radio" />
-                <label for="looktung_song">ลูกทุ่ง</label>
-                <input id="other_song" type="radio" name="song_radio" />
-                <label for="other_song">อื่นๆ</label>
-            </td>
-        </tr>
+            <tr>
+                <td>ชื่อ</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>สกุล</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>วัน/เดือน/ปีเกิด</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>อายุ</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>เพศ</td>
+                <td><input id="radio_male" type="radio" name="sex_radio" />
+                    <label for="radio_male">ชาย</label>
+                    <input id="radio_female" type="radio" name="sex_radio" />
+                    <label for="radio_female">หญิง</label>
+                </td>
+            </tr>
+            <tr>
+                <td>รูป</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td>ที่อยู่</td>
+                <td><textarea placeholder="กรุณากรอกข้อมูล" rows="4" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td>สีที่ชอบ</td>
+                <td><select id="color" name="color">
+                        <option value="not_selected">-</option>
+                        <option value="blue">ฟ้า</option>
+                        <option value="green">เขียว</option>
+                        <option value="yellow">เหลือง</option>
+                        <option value="other">อื่นๆ</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>แนวเพลงที่ชอบ</td>
+                <td><input id="forlife_song" type="radio" name="song_radio" />
+                    <label for="forlife_song">เพื่อชีวิต</label>
+                    <input id="looktung_song" type="radio" name="song_radio" />
+                    <label for="looktung_song">ลูกทุ่ง</label>
+                    <input id="other_song" type="radio" name="song_radio" />
+                    <label for="other_song">อื่นๆ</label>
+                </td>
+            </tr>
 
-    </table><br>
-    <div>
-    <input type="checkbox" id="accept" name="accept">
-    <label for = accept>ยินยอมให้เก็บข้อมูล</label><br><br><br>
-    <input class= "reset_button" type="reset" value="Reset">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-    <input class= "submit_button" type="submit" value="Submit">
-</div>
-</form>
-<footer>
-    <b></b>
-</footer>
+        </table><br>
+        <div>
+            <input type="checkbox" id="accept" name="accept">
+            <label for=accept>ยินยอมให้เก็บข้อมูล</label><br><br><br>
+            <input class="reset_button" type="reset"
+                value="Reset">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input class="submit_button" type="submit" value="Submit">
+        </div>
+    </form>
+    <footer>
+        <b></b>
+    </footer>
 </body>
+
 </html>
