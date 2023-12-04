@@ -1,8 +1,10 @@
-.content{
+body{
     background-image: url('S__13639712.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #971515 ;
+    color: white;
     padding: 20px;
     font-size: 20px;
 }
@@ -19,11 +21,6 @@ footer {
     padding: auto;
     margin-top: 20px;
     padding: 55px;
-}
-
-body {
-    background-color: #971515 ;
-    color: white;
 }
 
 .snowman {
