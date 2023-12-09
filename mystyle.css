@@ -1,3 +1,6 @@
+h1{
+    color: white;
+}
 .box{
     width: 400px;
     height: 400px;
@@ -25,7 +28,7 @@ body{
     background-color:rgb(118, 11, 82);
     box-shadow:30px 30px 26px #1e1e1e;
     border-radius: 40px;
-    background-image: url(https://i.makeagif.com/media/7-28-2021/4p_Hr8.gif);
+    background-image: url(https://media4.giphy.com/media/tkndGHrse5sWc/giphy.gif?cid=ecf05e476caam0wz2opr602z1droffgzzho7f3dmbi9sjxbh&ep=v1_gifs_search&rid=giphy.gif&ct=g);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
