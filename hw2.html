@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Page Title</title>
-    <meta charset="utf-8" />
 
-    <link rel="stylesheet" href="mystyle.css" />
-  </head>
-  <body>
-    <h1>This is CSS101.html</h1>
-    <div class="box">This is BOX</div>
-  </body>
+<head>
+  <title>Page Title</title>
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet" href="mystyle.css" />
+  <script src="E:/329/script.js"></script>
+</head>
+
+<body>
+  <h1>This is CSS101.html</h1>
+  <div class="box">
+    <a 
+    <audio id="beep" preload="auto">
+      <source src="E:/_11624477.mp4">
+    </audio>
+    This is BOX
+  </div>
+
+</body>
+<script>
+  var beepOne = $("#beep")[0];
+  $(".box")
+    .mouseenter(function () {
+      beepOne.play();
+    });
+</script>
+
 </html>
