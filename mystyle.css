@@ -2,7 +2,10 @@
     width: 400px;
     height: 400px;
     color: rgb(255, 255, 255);
-    background-color:rgb(81, 102, 138);
+    background-image: url(https://i.pinimg.com/originals/86/f0/7b/86f07b3af5597023a031511783402ead.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     border: 5px dashed rgb(0,255,0);
     padding-top: 10px;
@@ -11,13 +14,18 @@
     justify-content: center;
     align-items: center;
     border-radius: 40px;
+    text-align: center;
 }
-
+body{
+    background-image: url(https://www.icegif.com/wp-content/uploads/2022/01/icegif-962.gif);
+    background-position: center;
+    background-size: cover;
+}
 .box:hover{
     background-color:rgb(118, 11, 82);
     box-shadow:30px 30px 26px #1e1e1e;
     border-radius: 40px;
-    background-image: url(https://media4.giphy.com/media/Ju7l5y9osyymQ/giphy.gif?cid=ecf05e47njvxrd2v46ho9amyqaeh2shaask5jxk2dt0cg3z7&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    background-image: url(https://i.makeagif.com/media/7-28-2021/4p_Hr8.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
