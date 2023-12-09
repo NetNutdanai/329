@@ -11,21 +11,24 @@
 
 <body>
   <h1>This is CSS101.html</h1>
-  <div class="box">
-    <a 
+  <div class="box" onmouseover="playAudio()" onmouseout="pauseAudio()">
     <audio id="beep" preload="auto">
-      <source src="E:/_11624477.mp4">
+      <source src="beep.mp4" type="audio/mp4"></source>
     </audio>
     This is BOX
   </div>
+  <script>
+    var audio = document.getElementById("beep");
 
+    function playAudio() {
+      audio.play();
+    }
+
+    function pauseAudio() {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+  </script>
 </body>
-<script>
-  var beepOne = $("#beep")[0];
-  $(".box")
-    .mouseenter(function () {
-      beepOne.play();
-    });
-</script>
 
 </html>
