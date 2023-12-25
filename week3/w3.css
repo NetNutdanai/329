@@ -1,0 +1,22 @@
+header{
+    padding-top: 1%;
+}
+.table {
+    margin-top: 10px;
+    width: 400px;
+    height: 300px;
+    border: 5px solid black; 
+    overflow:auto;
+    color: white;
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ca859f46883455.5868f5e2f3707.gif');
+    background-position: center;
+    background-size: cover;
+}
+body{
+    background-repeat: no-repeat;
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/057/584/196/original/exceptrea-gamerrom-11-christmas-0.gif?1672059240');
+    background-position: center;
+    background-size: cover;
+}
+
+
