@@ -19,12 +19,18 @@ Route::get('/', function () {
 });
 
 Route::get('/my-route', function(){
-    echo "<h1>My Route Page</h1>";
-    $data=['val_a' => 'Hello World!'];
-    $data['val_b'] = "Laravel";
-    return view('myfolder.mypage', $data);
+    return view('myroute');
 });
+
 Route::post('/my-route',function(Request $req){
-    $data['myinput'] = $req->input('myinput');
-    return view('myroute',$data);
+    $data['MultiNum'] = $req -> input('MultiNum');
+    return view('myfolder.mypage',$data);
+});
+
+Route::post('/my-page', function(Request $req) {
+    $req->validate([    
+        'back' => 'required|string',
+    ]);
+    $data['back'] = $req->input('back');
+    return view('back', $data);
 });
