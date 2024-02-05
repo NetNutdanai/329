@@ -59,6 +59,7 @@
                             <div class="card-footer">
                                 <button type="submit" class="btn btn-success">บันทึก</button>
                             </div>
+
                         </form>
                     </div>
                     <!-- /.card -->
@@ -112,5 +113,11 @@
         </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
-
+    <form method="post" action="{{ url('/logout') }}">
+        @csrf
+        <div class="card-footer">
+            <button type="submit" class="btn btn-danger"
+                onclick="return confirm('คุณต้องการออกจากระบบ');">ออกจากระบบ</button>
+        </div>
+    </form>
 @endsection
