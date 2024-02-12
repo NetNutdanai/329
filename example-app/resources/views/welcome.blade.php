@@ -1,4 +1,151 @@
-<!doctype html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 101</title>
+</head>
+<style>
+    body {
+        background-color: beige;
+        font-family: Arial, sans-serif;
+    }
+
+    #content {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    }
+
+    h1 {
+        color: #3f3e3e;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    button {
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+    #submit {
+        background-color: #1dd965;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    #submit:hover {
+        background-color: #15a04a;
+    }
+
+    #cancle {
+        background-color: #e51818;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    #cancle:hover {
+        background-color: #961515;
+    }
+
+    input {
+        width: 200px;
+        padding: 8px 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    th {
+        text-align: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: #b001b0;
+        color: white;
+        font-size: 20px;
+    }
+
+    td,
+    th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+    }
+</style>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <center>
+        <div id = "content">
+            <h1>ตารางแม่สูตรคูณ</h1>
+            <label for="input_number">กรอกตัวเลข</label><br>
+            <input type="text" id="input_number" /><br>
+
+            <button id="submit">ยืนยัน</button>
+            <button id="cancle">ยกเลิก</button>
+            <br>
+
+            <table id="result_table">
+                <!-- table will be generated here -->
+                <tbody id="result_tbody">
+                </tbody>
+            </table>
+        </div>
+    </center>
+    <script>
+        $(document).ready(function() {
+            $("#submit").click(function() {
+                let number = $("#input_number").val();
+                if (!isNaN(number) && number !== "") {
+                    generateTable(number);
+                } else {
+                    alert('โปรดกรอกค่าตัวเลข')
+                }
+            });
+
+            $("#cancle").click(function() {
+                //location.reload();
+                resetTable();
+            });
+        });
+
+        function generateTable(num) {
+            let result = "<tr><th>สูตรคูณแม่ " + num + "</th></tr>"
+            for (let i = 1; i <= 24; i++) {
+                result += `<tr><td>${num} x ${i} = ${num * i}</td></tr>`
+            }
+            $('#result_tbody').html(result)
+        }
+
+        function resetTable() {
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>
+
+{{-- <!doctype html>
 <html>
 
 <head>
@@ -35,7 +182,7 @@
             console.log($('#myh1').text())
             console.log($('#my_number').val())
             $('#myh1').text("Javascript 101")
-            $('#my_number').val(100)
+            $('#my_number').val(10)
             // setInterval(() => {
             //     $('#myh1').after(`<h1 class="my_gen_number">setInterval</h1>`)
             // }, 2000);
@@ -106,4 +253,5 @@
     </script>
 </body>
 
-</html>
+</html> --}}
+
